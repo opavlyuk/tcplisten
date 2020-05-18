@@ -6,7 +6,7 @@ import (
 	"syscall"
 )
 
-const soReusePort = 0x0200
+const soReusePort = 0x00010000
 
 func enableDeferAccept(fd int) error {
 	// TODO: implement SO_ACCEPTFILTER:dataready here
